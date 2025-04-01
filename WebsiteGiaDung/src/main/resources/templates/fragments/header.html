@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Màu nền xanh nhạt (có thể thay đổi) */
+        }
+
+        /* Nếu cần thêm màu nền khác cho header */
+        header {
+            background-color: #ffffff; /* Màu trắng */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="row py-3 border-bottom">
+            <div class="col-sm-4 col-lg-2 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start">
+                <div class="d-flex align-items-center my-3 my-sm-0">
+                    <a href="/">
+                        <img th:src="@{/uploads/logo.jpg}" alt="logo" class="img-fluid" style="max-height: 50px;">
+                    </a>
+                </div>
+            </div>
+            <!--TIM KIEM-->
+            <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-4">
+                <div class="search-bar row bg-light p-2 rounded-4">
+                    <div class="col-11">
+                        <form id="search-form" class="text-center" action="/search" method="get">
+                            <input type="text" class="form-control border-0 bg-transparent w-100" name="query"
+                                   placeholder="Tìm kiếm sản phẩm">
+                        </form>
+                    </div>
+                    <div class="col-1 d-flex align-items-center">
+                        <button type="submit" form="search-form" class="border-0 bg-transparent p-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                      d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <ul class="navbar-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center mb-0 fw-bold text-uppercase text-dark">
+                    <li class="nav-item active">
+                        <a href="\" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle pe-3" role="button" id="categoriesDropdown" data-bs-toggle="dropdown" aria-expanded="false">Loại sản phẩm</a>
+                        <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="categoriesDropdown" id="categoriesMenu"></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle pe-3" role="button" id="brandDropdown" data-bs-toggle="dropdown" aria-expanded="false">Thương Hiệu</a>
+                        <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="brandDropdown" id="brandMenu"></ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-8 col-lg-2 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end">
+                <ul class="d-flex justify-content-end list-unstyled m-0">
+
+                    <!-- Show login button if not authenticated -->
+                    <li sec:authorize="isAnonymous()">
+                        <a href="/login" class="btn btn-primary p-2 mx-1">Login</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center" sec:authorize="isAuthenticated()">
+        <span class="navbar-text text-black">
+            <span th:text="${#authentication.principal.username}" style="margin-right: 20px;"></span>
+        </span>
+                    <li sec:authorize="isAuthenticated()">
+                        <form th:action="@{/logout}" method="post">
+                            <button type="submit" class="btn btn-danger p-2 mx-1">Logout</button>
+                        </form>
+                    </li>
+                    </li>
+                    <!-- Show user details and logout if authenticated -->
+                    <li sec:authorize="isAuthenticated()">
+                        <a href="/user/details" class="btn btn-primary p-2 mx-1">
+                            <svg width="24" height="24">
+                                <use xlink:href="#user"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li sec:authorize="hasAuthority('ADMIN')">
+                        <a href="/admin" class="btn btn-success p-2 mx-1">
+                            <svg width="24" height="24">
+                                <use xlink:href="#user"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <button class="btn btn-primary p-2 mx-1" th:onclick="|location.href='@{/cart}'|">
+                            <svg width="24" height="24">
+                                <use xlink:href="#shopping-bag"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Fetch and populate categories
+        fetch("/api/categories")
+            .then(response => response.json())
+            .then(categories => {
+                const categoriesMenu = document.getElementById("categoriesMenu");
+                categories.forEach(category => {
+                    const categoryItem = document.createElement("li");
+                    const categoryLink = document.createElement("a");
+                    categoryLink.href = `/products/category?categoryId=${category.idLoaiSanPham}`;
+                    categoryLink.className = "dropdown-item";
+                    categoryLink.textContent = category.tenLoaiSanPham;
+                    categoryItem.appendChild(categoryLink);
+                    categoriesMenu.appendChild(categoryItem);
+                });
+            })
+            .catch(error => console.error("Error loading categories:", error));
+
+        // Fetch and populate brands
+        fetch("/api/brands")
+            .then(response => response.json())
+            .then(brands => {
+                const brandMenu = document.getElementById("brandMenu");
+                brands.forEach(brand => {
+                    const brandItem = document.createElement("li");
+                    const brandLink = document.createElement("a");
+                    brandLink.href = `/products/brand?brandId=${brand.idBrand}`;
+                    brandLink.className = "dropdown-item";
+                    brandLink.textContent = brand.brandName;
+                    brandItem.appendChild(brandLink);
+                    brandMenu.appendChild(brandItem);
+                });
+            })
+            .catch(error => console.error("Error loading brands:", error));
+    });
+</script>
+
+</body>
+</html>

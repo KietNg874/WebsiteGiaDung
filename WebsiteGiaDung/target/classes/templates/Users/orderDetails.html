@@ -1,0 +1,28 @@
+<div class="container mt-5" xmlns:th="http://www.w3.org/1999/xhtml">
+    <h1 class="mb-4">Chi tiết Order</h1>
+    <div class="card p-3">
+        <h2 class="card-title">Order #<span th:text="${order.id}"></span></h2>
+        <p><strong>Địa chỉ:</strong> <span th:text="${order.diaChi}"></span></p>
+        <p><strong>Tình trạng:</strong> <span th:text="${order.orderStatus}"></span></p>
+        <h3>Sản phẩm</h3>
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Tổng</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="detail : ${orderDetails}">
+                <td th:text="${detail.product.tenSanPham}"></td>
+                <td th:text="${detail.quantity}"></td>
+                <td th:text="${detail.product.gia}"></td>
+                <td th:text="${detail.product.gia * detail.quantity}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <a href="/user" class="btn btn-secondary mt-3">Quay lại</a>
+</div>

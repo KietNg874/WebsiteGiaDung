@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ccf5a37-0dbc-4381-acbf-ad9ffd39690b" name="Changes" comment="add file">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/OrderStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/OrderStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/Security/CustomOAuth2User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/Security/CustomOAuth2User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/Security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/Security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/WebsiteGiaDungApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/WebsiteGiaDungApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/AdminOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/AdminOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/BrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/BrandController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/CartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/PaymentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/RatingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/RatingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/SearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/UserDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/controller/UserDetailController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Brand$BrandBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Brand$BrandBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Brand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Brand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/CartItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/CartItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/LoaiSanPham$LoaiSanPhamBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/LoaiSanPham$LoaiSanPhamBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/LoaiSanPham.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/LoaiSanPham.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/OrderDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Rating$RatingBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Rating$RatingBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Rating.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Rating.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/RatingRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/RatingRequestDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Role$RoleBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Role$RoleBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/SanPham$SanPhamBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/SanPham$SanPhamBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/SanPham.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/SanPham.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/TaiKhoan$TaiKhoanBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/TaiKhoan$TaiKhoanBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/TaiKhoan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/TaiKhoan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/payment/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/payment/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/BrandRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/BrandRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/CartItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/CartItemRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/CartRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/CartRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/CategoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/CategoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/IRoleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/IRoleRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/OrderDetailRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/OrderDetailRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/OrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/RatingRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/RatingRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/BrandService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/BrandService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/CartService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/CustomOAuth2UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/CustomOAuth2UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/OrderDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/OrderDetailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/RatingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/RatingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/WebsiteGiaDung/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/image/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/image/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Admin/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/Admin/dashboard.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="my-feature-branch" />
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2n5cxtvNnVS2Yt83BvPsqEjirHD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.WebsiteGiaDungApplication.executor": "Debug",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/84359/Desktop/TongHopDoAnDaLam/BaoCaoDoAnChuyenNganh/demo/DoAnV4/WebsiteGiaDung",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\84359\Desktop\Doanchuyennganhmoinhat\WebsiteGiaDung\src\main\resources\templates\Cart" />
+      <recent name="C:\Users\Yod\Desktop\Trung 25-11\WebsiteGiaDung\src\main\resources\templates\products" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Yoth v6.0\Desktop\WebsiteGiaDung\src\main\resources\templates\fragments" />
+      <recent name="C:\Users\Yod\Desktop\Trung 25-11f\WebsiteGiaDung\src\main\resources\templates\Admin" />
+      <recent name="D:\DoAnChuyenNganh\WebsiteGiaDung\src\main\resources\static\image" />
+      <recent name="D:\DoAnChuyenNganh\WebsiteGiaDung\src\main\resources\static\js\scrip" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WebsiteGiaDungApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/WebsiteGiaDung/WebsiteGiaDungApplication.java" />
+      </option>
+      <option name="MAIN_CLASS_NAME" value="com.example.WebsiteGiaDung.WebsiteGiaDungApplication" />
+      <module name="WebsiteGiaDung" />
+      <option name="PROGRAM_PARAMETERS" value="$MAVEN_REPOSITORY$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.WebsiteGiaDung.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WebsiteGiaDungApplication" />
+        <item itemvalue="Application.WebsiteGiaDungApplication" />
+        <item itemvalue="Application.WebsiteGiaDungApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ccf5a37-0dbc-4381-acbf-ad9ffd39690b" name="Changes" comment="" />
+      <created>1728266628066</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728266628066</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add file">
+      <option name="closed" value="true" />
+      <created>1743470895040</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743470895040</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add file">
+      <option name="closed" value="true" />
+      <created>1743471196378</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743471196378</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add file" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/WebsiteGiaDung/model/Cart.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

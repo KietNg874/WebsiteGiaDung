@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Management</title>
+  <link rel="stylesheet" href="/pluto-1.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/pluto-1.0.0/style.css" />
+</head>
+<body class="dashboard dashboard_1">
+<div class="full_container">
+  <div class="inner_container">
+    <!-- Sidebar -->
+    <div th:replace="fragments/sidebar :: sidebar"></div>
+    <!-- Main Content -->
+    <div id="content">
+      <div th:replace="fragments/topbar :: topbar"></div>
+      <!-- Dashboard Inner -->
+      <section layout:fragment="content">
+        <div class="row column_title">
+          <div class="col-md-12">
+            <div class="page_title">
+              <h2>Orders</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Orders Table -->
+        <table class="table table-bordered table-hover">
+          <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>Customer Name</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Thu tiền</th>
+            <th>Order Status</th>
+            <th>Actions</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr th:each="order : ${orders}">
+            <td th:text="${order.id}"></td>
+            <td th:text="${order.customerName}"></td>
+            <td th:text="${order.DiaChi}"></td>
+            <td th:text="${order.phone}"></td>
+            <td th:text="${order.thutien}"></td>
+            <td>
+              <form th:action="@{/admin/orders/changeStatus}" method="post">
+                <input type="hidden" name="id" th:value="${order.id}">
+                <select name="orderStatus" class="form-select form-select-sm" onchange="this.form.submit()">
+                  <option th:each="status : ${T(com.example.WebsiteGiaDung.OrderStatus).values()}"
+                          th:value="${status}"
+                          th:selected="${status == order.orderStatus}"
+                          th:text="${status}"></option>
+                </select>
+              </form>
+            </td>
+            <td>
+              <a th:href="@{/order/details/{id}(id=${order.id})}" class="btn btn-info btn-sm">View Details</a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Footer -->
+      <div class="container-fluid">
+        <div class="footer">
+          <p>Copyright © 2024 Admin Dashboard</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS Files -->
+<script src="/pluto-1.0.0/js/jquery.min.js"></script>
+<script src="/pluto-1.0.0/js/popper.min.js"></script>
+<script src="/pluto-1.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
