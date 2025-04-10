@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="">
+<head>
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>Admin</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="/pluto-1.0.0/css/bootstrap.min.css" />
+  <!-- site css -->
+  <link rel="stylesheet" href="/pluto-1.0.0/style.css" />
+  <!-- responsive css -->
+  <link rel="stylesheet" href="/pluto-1.0.0/css/responsive.css" />
+  <!-- color css -->
+  <link rel="stylesheet" href="css/colors.css" />
+  <!-- select bootstrap -->
+  <link rel="stylesheet" href="/pluto-1.0.0/css/bootstrap-select.css" />
+  <!-- scrollbar css -->
+  <link rel="stylesheet" href="/pluto-1.0.0/css/perfect-scrollbar.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="/pluto-1.0.0/css/custom.css" />
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="dashboard dashboard_1">
+<div class="full_container">
+  <div class="inner_container">
+    <!-- Sidebar -->
+    <div th:replace="fragments/sidebar :: sidebar"></div>
+
+    <!-- Main Content -->
+    <div id="content">
+      <!-- Topbar -->
+      <div th:replace="fragments/topbar :: topbar"></div>
+
+      <!-- dashboard inner -->
+      <body>
+      <section layout:fragment="content">
+        <div class="row column_title">
+          <div class="col-md-12">
+            <div class="page_title">
+              <h2>User Management</h2>
+            </div>
+          </div>
+        </div>
+        <table class="table table-bordered table-hover">
+          <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Actions</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr th:each="user : ${users}">
+            <td th:text="${user.id}"></td>
+            <td th:text="${user.username}"></td>
+            <td th:text="${user.email}"></td>
+            <td th:text="${user.phone}"></td>
+            <td>
+              <a th:href="@{/users/edit/{id}(id=${user.id})}" class="btn btn-success btn-sm">Edit</a>
+              <form th:action="@{/users/delete/{id}(id=${user.id})}" method="post" style="display:inline;">
+                <button type="submit" class="btn btn-danger btn-sm"
+                        onclick="return confirm('Are you sure you want to delete this user?');">Remove</button>
+              </form>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
+      </body>
+      <!-- footer -->
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- JS Files -->
+<!-- jQuery -->
+<script src="/pluto-1.0.0/js/jquery.min.js"></script>
+<script src="/pluto-1.0.0/js/popper.min.js"></script>
+<script src="/pluto-1.0.0/js/bootstrap.min.js"></script>
+<!-- wow animation -->
+<script src="/pluto-1.0.0/js/animate.js"></script>
+<!-- select country -->
+<script src="/pluto-1.0.0/js/bootstrap-select.js"></script>
+<!-- owl carousel -->
+<script src="/pluto-1.0.0/js/owl.carousel.js"></script>
+<!-- chart js -->
+<script src="/pluto-1.0.0/js/Chart.min.js"></script>
+<script src="/pluto-1.0.0/js/Chart.bundle.min.js"></script>
+<script src="/pluto-1.0.0/js/utils.js"></script>
+<script src="/pluto-1.0.0/js/analyser.js"></script>
+<!-- nice scrollbar -->
+<script src="/pluto-1.0.0/js/perfect-scrollbar.min.js"></script>
+<script>
+  var ps = new PerfectScrollbar('#sidebar');
+</script>
+<!-- custom js -->
+<script src="/pluto-1.0.0/js/chart_custom_style1.js"></script>
+<script src="/pluto-1.0.0/js/custom.js"></script>
+
+</body>
+</html>

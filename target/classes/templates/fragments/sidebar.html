@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    /* Chỉnh style cho sidebar */
+    #sidebar {
+        background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Gradient nền */
+        color: white; /* Màu chữ */
+        min-height: 100vh; /* Chiều cao sidebar */
+    }
+    #sidebar .sidebar_blog_1 {
+        padding: 20px;
+        text-align: center;
+    }
+    #sidebar .sidebar_blog_1 .logo_section img {
+        max-width: 80px;
+        margin-bottom: 10px;
+    }
+    #sidebar .sidebar_blog_2 h4 {
+        color: #ffc107; /* Màu tiêu đề */
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    #sidebar .list-unstyled {
+        padding-left: 0;
+    }
+    #sidebar .list-unstyled li {
+        margin: 10px 0;
+    }
+    #sidebar .list-unstyled li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    #sidebar .list-unstyled li a:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    #sidebar .list-unstyled li.active > a {
+        background: #ffc107;
+        color: #2c3e50;
+    }
+    #sidebar .dropdown-toggle:after {
+        content: '\f104'; /* FontAwesome icon */
+        font-family: FontAwesome;
+        float: right;
+        color: #ffc107;
+    }
+    #sidebar ul.collapse li a {
+        padding-left: 40px;
+    }
+  </style>
+</head>
+<body>
+<th:block id="sidebar" th:fragment="sidebar">
+  <nav id="sidebar">
+    <div class="sidebar_blog_1">
+      <div class="sidebar-header">
+        <div class="logo_section">
+          <a href="/pluto-1.0.0/index.html"><img class="logo_icon img-responsive" src="/pluto-1.0.0/images/logo/logo_icon.png" alt="#" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar_blog_2">
+      <h4>Quản lý</h4>
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fa fa-dashboard yellow_color"></i>
+            <span>Quản lý</span>
+          </a>
+          <ul class="collapse list-unstyled" id="dashboard">
+            <li>
+              <a href="/products">> <span>Sản phẩm</span></a>
+            </li>
+            <li>
+              <a href="/categories">> <span>Loại sản phẩm</span></a>
+            </li>
+            <li>
+              <a href="/brands">> <span>Thương hiệu</span></a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="/admin/orders"><i class="fa fa-clock-o orange_color"></i> <span>Đơn hàng</span></a></li>
+        <li><a href="/users"><i class="fa fa-user yellow_color"></i> <span>Quản lý người dùng</span></a></li>
+        <li><a href="tables.html"><i class="fa fa-table purple_color2"></i> <span>Tables</span></a></li>
+        <li>
+          <a href="#apps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-object-group blue2_color"></i> <span>Apps</span></a>
+          <ul class="collapse list-unstyled" id="apps">
+            <li><a href="email.html">> <span>Email</span></a></li>
+            <li><a href="calendar.html">> <span>Calendar</span></a></li>
+            <li><a href="media_gallery.html">> <span>Media Gallery</span></a></li>
+          </ul>
+        </li>
+        <li><a href="price.html"><i class="fa fa-briefcase blue1_color"></i> <span>Pricing Tables</span></a></li>
+        <li>
+          <a href="contact.html">
+            <i class="fa fa-paper-plane red_color"></i> <span>Contact</span></a>
+        </li>
+        <li class="active">
+          <a href="#additional_page" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-clone yellow_color"></i> <span>Additional Pages</span></a>
+          <ul class="collapse list-unstyled" id="additional_page">
+            <li>
+              <a href="profile.html">> <span>Profile</span></a>
+            </li>
+            <li>
+              <a href="project.html">> <span>Projects</span></a>
+            </li>
+            <li>
+              <a href="login.html">> <span>Login</span></a>
+            </li>
+            <li>
+              <a href="404_error.html">> <span>404 Error</span></a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="map.html"><i class="fa fa-map purple_color2"></i> <span>Map</span></a></li>
+        <li><a href="charts.html"><i class="fa fa-bar-chart-o green_color"></i> <span>Charts</span></a></li>
+        <li><a href="settings.html"><i class="fa fa-cog yellow_color"></i> <span>Settings</span></a></li>
+      </ul>
+    </div>
+  </nav>
+</th:block>
+</body>
+</html>

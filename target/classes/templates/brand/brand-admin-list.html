@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Admin</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/pluto-1.0.0/css/bootstrap.min.css" />
+    <!-- site css -->
+    <link rel="stylesheet" href="/pluto-1.0.0/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="/pluto-1.0.0/css/responsive.css" />
+    <!-- color css -->
+    <link rel="stylesheet" href="css/colors.css" />
+    <!-- select bootstrap -->
+    <link rel="stylesheet" href="/pluto-1.0.0/css/bootstrap-select.css" />
+    <!-- scrollbar css -->
+    <link rel="stylesheet" href="/pluto-1.0.0/css/perfect-scrollbar.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="/pluto-1.0.0/css/custom.css" />
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="dashboard dashboard_1">
+<div class="full_container">
+    <div class="inner_container">
+        <!-- Sidebar -->
+        <div th:replace="fragments/sidebar :: sidebar"></div>
+
+        <!-- Main Content -->
+        <div id="content">
+            <!-- Topbar -->
+            <div th:replace="fragments/topbar :: topbar"></div>
+
+            <!-- dashboard inner -->
+            <body>
+            <section layout:fragment="content">
+                <div class="row column_title">
+                    <div class="col-md-12">
+                        <div class="page_title">
+                            <h2>Brands List</h2>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a th:href="@{/brands/add}" class="btn btn-primary mb-3">Add New Brand</a>
+                </div>
+                <table class="table table-bordered table-hover">
+                    <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="brand : ${brands}">
+                        <td th:text="${brand.idBrand}"></td>
+                        <td th:text="${brand.brandName}"></td>
+                        <td>
+                            <a th:href="@{/brands/edit/{id}(id=${brand.idBrand})}" class="btn btn-success btn-sm">Edit</a>
+                            <a th:href="@{/brands/delete/{id}(id=${brand.idBrand})}" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+            </body>
+            <!-- footer -->
+            <div class="container-fluid">
+                <div class="footer">
+                    <p>Copyright © 2018 Designed by html.design. All rights reserved.<br><br>
+                        Distributed By: <a href="https://themewagon.com/">ThemeWagon</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- JS Files -->
+<!-- jQuery -->
+<script src="/pluto-1.0.0/js/jquery.min.js"></script>
+<script src="/pluto-1.0.0/js/popper.min.js"></script>
+<script src="/pluto-1.0.0/js/bootstrap.min.js"></script>
+<!-- wow animation -->
+<script src="/pluto-1.0.0/js/animate.js"></script>
+<!-- select country -->
+<script src="/pluto-1.0.0/js/bootstrap-select.js"></script>
+<!-- owl carousel -->
+<script src="/pluto-1.0.0/js/owl.carousel.js"></script>
+<!-- chart js -->
+<script src="/pluto-1.0.0/js/Chart.min.js"></script>
+<script src="/pluto-1.0.0/js/Chart.bundle.min.js"></script>
+<script src="/pluto-1.0.0/js/utils.js"></script>
+<script src="/pluto-1.0.0/js/analyser.js"></script>
+<!-- nice scrollbar -->
+<script src="/pluto-1.0.0/js/perfect-scrollbar.min.js"></script>
+<script>
+    var ps = new PerfectScrollbar('#sidebar');
+</script>
+<!-- custom js -->
+<script src="/pluto-1.0.0/js/chart_custom_style1.js"></script>
+<script src="/pluto-1.0.0/js/custom.js"></script>
+
+</body>
+</html>
